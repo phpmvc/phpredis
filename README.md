@@ -1,0 +1,2 @@
+# phpredis
+phpredis_class
