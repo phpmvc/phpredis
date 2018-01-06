@@ -1,0 +1,21 @@
+{
+    "name": "phoenix/phpredis",
+    "description": "基于 nrk/predis 封装的 Redis 类，包含 string、hash、list、set、zset 类型的操作",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "phoenix",
+            "email": "luoxuan5678@qq.com"
+        }
+    ],
+    "require": {
+        "php":">=5.5.0",
+        "predis/predis": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phoenix\\": "src/"
+        }
+    }
+}
