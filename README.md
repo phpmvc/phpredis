@@ -3,5 +3,5 @@
 
 # 安装
 ```
-composer require yufeixuan/phpredis
+ composer require yufeixuan/phpredis
 ```
