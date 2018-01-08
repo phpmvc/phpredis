@@ -60,7 +60,7 @@ class Redis
     }
 
     
-    /**
+/**
      * 设置缓存
      * @param string $key 缓存标识
      * @param mixed  $value 缓存的数据
@@ -181,7 +181,7 @@ class Redis
             return false;
         }
         
-        return static::$redis->hset($key, $field);
+        return static::$redis->hset($key, $field, $value);
     }
     
     /**
@@ -243,7 +243,7 @@ class Redis
     }
     
     /**
-     * 返回列表 key 的长度
+     * 返回list列表 key 的长度
      * @param string $key
      */
     public static function llen($key)
@@ -253,6 +253,19 @@ class Redis
         }
         
         return static::$redis->llen($key);
+    }
+    
+    /**
+     * 返回hash列表 key 的长度
+     * @param string $key
+     */
+    public static function hlen($key)
+    {
+        if (empty($key)) {
+            return false;
+        }
+        
+        return static::$redis->hlen($key);
     }
     
     
